@@ -1,4 +1,6 @@
+import Link from "next/link";
 import PatientForm from "../components/forms/PatientForm";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -9,6 +11,9 @@ export default function Home() {
             Welcome to Agnos Hospital
           </h1>
           <p className="text-gray-600">Real-time Patient Intake System</p>
+          <Link href={"/staff"} target="_blank">
+            <Button>Staff Page</Button>
+          </Link>
         </div>
         <PatientForm />
       </div>
